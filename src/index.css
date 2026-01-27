@@ -1,1 +1,27 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  
+  :root {
+    --theme-surface: var(--color-slate-50);
+    --theme-ink: var(--color-slate-900);
+    --theme-accent: var(--color-red-600);
+  }
+  
+  .dark {
+    --theme-surface: var(--color-slate-950);
+    --theme-ink: var(--color-slate-200);
+    --theme-accent: var(--color-red-500);
+  }
+}
+
+
+
+
+@theme inline {
+  --color-surface: var(--theme-surface);
+  --color-ink: var(--theme-ink);
+  --color-brand: var(--theme-brand);
+  --color-accent: var(--theme-accent);
+}

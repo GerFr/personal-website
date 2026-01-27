@@ -1,12 +1,22 @@
+import { Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home.jsx'
+import Projects from './pages/Projects.jsx'
+import About from './pages/About.jsx'
+import Contact from './pages/Contact.jsx'
+import Layout from './Layout.jsx'
+
+
 function App() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <h1 className="text-3xl font-bold">
-        Hello World
-      </h1>
-
-
-    </main>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
   )
 }
 
