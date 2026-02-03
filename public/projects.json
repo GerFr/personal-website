@@ -1,0 +1,20 @@
+[
+  {
+    "id": "portfolio",
+    "title": "Portfolio",
+    "description": "My personal site.",
+    "image": "/images/portfolio/portfolio.png"
+  },
+  {
+    "id": "todo",
+    "title": "Todo App",
+    "description": "Tasks, filters, persistence.",
+    "image": "/images/todo/todo.png"
+  },
+  {
+    "id": "weather",
+    "title": "Weather",
+    "description": "Forecast UI + search.",
+    "image": "/images/weather/weather.png"
+  }
+]
